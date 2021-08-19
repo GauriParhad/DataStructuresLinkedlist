@@ -1,4 +1,4 @@
-package
+package com.javapractice;
 import org.junit.Test;
 import org.junit.Assert;
 
