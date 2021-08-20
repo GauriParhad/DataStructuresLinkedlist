@@ -45,6 +45,7 @@ public class myLinkedList {
         myLinkedList.add(myFirstNode);
         myLinkedList.add(mySecondNode);
         myLinkedList.add(myThirdNode);
+        myLinkedList.add(myFirstNode);
         myLinkedList.append(myThirdNode);
         myLinkedList.insert(myFirstNode,mySecondNode);
         myLinkedList.pop();
