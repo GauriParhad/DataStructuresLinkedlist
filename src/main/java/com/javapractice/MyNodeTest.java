@@ -55,7 +55,7 @@ public class myLinkedList {
     }
 }
 @Test
-//NSTERING 40 IN BETWEEN 56,30,70*/
+//Deleting 40 IN BETWEEN 56,30,70*/
 public class myLinkedList {
     public void given3NumbersWhenlinkShouldPassedToLinkedListTest() {
         MyNode<Integer> myFirstNode = new MyNODE<>(56);
@@ -69,7 +69,8 @@ public class myLinkedList {
         myLinkedList.add(mySecondNode);
         myLinkedList.append(myFourthNode);
         myLinkedList.insert(myThirdNode,mySecondNode);
-        boolean result=myFirstNode.getNext().equals(mySecondNode) && mySecondNode.getNext().equals(myThirdNode);
+        myLinkedList.deleteFromMid(myThirdNode);
+        boolean result=myFirstNode.getNext().equals(mySecondNode) && mySecondNode.getNext().equals(myFirstdNode);
 
         Assert.assertTrue(result);
     }
