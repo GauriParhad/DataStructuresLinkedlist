@@ -54,3 +54,23 @@ public class myLinkedList {
         Assert.assertTrue(result);
     }
 }
+@Test
+//NSTERING 40 IN BETWEEN 56,30,70*/
+public class myLinkedList {
+    public void given3NumbersWhenlinkShouldPassedToLinkedListTest() {
+        MyNode<Integer> myFirstNode = new MyNODE<>(56);
+        MyNode<Integer> mySecondNode = new MyNODE<>(30);
+        MyNode<Integer> myThirdNode = new MyNODE<>(40);
+        MyNode<Integer> myFourthNode =new MyNode<>(70);
+        myFirstNode.setNext(mySecondNode);
+        mySecondNode.setNext(myThirdNode);
+        myThirdNode.setNext(myFourthNode);
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.add(mySecondNode);
+        myLinkedList.append(myFourthNode);
+        myLinkedList.insert(myThirdNode,mySecondNode);
+        boolean result=myFirstNode.getNext().equals(mySecondNode) && mySecondNode.getNext().equals(myThirdNode);
+
+        Assert.assertTrue(result);
+    }
+}
