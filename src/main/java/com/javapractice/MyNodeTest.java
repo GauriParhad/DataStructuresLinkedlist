@@ -75,3 +75,25 @@ public class myLinkedList {
         Assert.assertTrue(result);
     }
 }
+@Test
+//Sorting in Ascending order*/
+public class SortAscendingorderlinkedlistfromtop{
+    public void SortAscendingorderlinkedlistfromtop() {
+        MyNode<Integer> myFirstNode = new MyNODE<>(56);
+        MyNode<Integer> mySecondNode = new MyNODE<>(30);
+        MyNode<Integer> myThirdNode = new MyNODE<>(40);
+        MyNode<Integer> myFourthNode =new MyNode<>(70);
+        myFirstNode.setNext(mySecondNode);
+        mySecondNode.setNext(myThirdNode);
+        myThirdNode.setNext(myFourthNode);
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.add(mySecondNode);
+        myLinkedList.append(myFourthNode);
+        myLinkedList.insert(myThirdNode,mySecondNode);
+        myLinkedList.deleteFromMid(myThirdNode);
+        boolean result=myFirstNode.getNext().equals(mySecondNode) && myFirstNode.getNext().getNext()equals(myThirdNode) &&
+        myFirstNode.getNext().getNext().getNext().myLinkedlist.sortLinkedlistAscendingorder(0);
+
+        Assert.assertTrue(result);
+    }
+}
